@@ -1,0 +1,41 @@
+<!-- Please note that when running this HTML file, to see the diagnal lines clearly
+you may need to zoom in as these design element requires a high resolution to be dsiplayed
+due to the fine nature of this design, and your display may not have enough resolution.
+Therefore upon loading this file, if the diagnal lines in the green background do not show clearly
+or not spread in a uniform fashion, zoom into the page.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>A Simple Timer </title>
+<script src="./index.js"></script>
+<link rel=StyleSheet href="./style.css" type="text/css">
+</head>
+
+<body>
+
+  <div id="cv-lightbox">
+    <div id="closeIcon" onclick="Close();">
+      <p id="InsideCloseIcon">x</p>
+    </div>
+
+    <div id="timerBox">
+      <div id=timerContent>
+      <div id="timer">
+      <p id="minutes">00</p>
+      <p id="seconds">00</p>
+      </div>
+    </div>
+    </div>
+
+    <div id="timerInputContainer">
+      <input type="number" min="0" max="60" id="minutesField" placeholder="Enter minutes">
+      <input type="number"  min="0" max="60" id="secondsField" placeholder="Enter seconds">
+      <button id="timerButton" onclick="startTime()"> Set timer </button>
+    </div>
+  </div>
+
+</body>
+</html>
